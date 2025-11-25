@@ -106,34 +106,3 @@ cd patient-service
 docker build -t my/patient-service:latest .
 ```
 
-## Troubleshooting
-
-- If a module fails to compile, inspect the module's `pom.xml` for Java version and plugin settings.
-- If Protobuf-generated classes are missing, run a full `clean install` to force code generation.
-- When ports conflict, check each module's `src/main/resources/application*.yml` or `application.properties` for configured server ports.
-
-## Notes and conventions
-
-- The repository uses the included Maven wrapper (`mvnw` / `mvnw.cmd`) to pin the Maven version.
-- The project contains IntelliJ configuration files; they are optional and can be ignored if you use another IDE.
-- Module `billiing-service` uses the repository's existing folder name; if you rename it, make sure to update any references.
-
-## Contributing
-
-1. Create an issue describing the change or bug.
-2. Create a branch `feat/<short-description>` or `fix/<short-description>`.
-3. Run the project's tests locally and ensure `mvnw` build passes.
-4. Open a pull request describing the changes.
-
-## Next steps / suggestions
-
-- Add a `docker-compose.yml` to orchestrate multiple services locally (API gateway, auth, patient, and a test DB).
-- Add module-level README files for each service with env variables and exact ports used.
-- Add CI pipeline to run `mvnw -T 1C -DskipTests clean install` and integration tests.
-
----
-
-If you'd like, I can also:
-- add a `docker-compose.yml` that brings up an example stack locally;
-- add per-module README notes (ports, env vars) for `patient-service` and `auth-service`.
-
