@@ -1,10 +1,10 @@
 
-# my-java-microservice
-
+# Patient Management Java Microservice
 Composed of multiple small Spring Boot microservices for demo/learning purposes. This repository contains a collection of services and supporting modules used for patient management, authentication, billing, analytics, and an API gateway.
 
 
-<img width="1087" height="446" alt="Screenshot 2025-11-25 225921" src="https://github.com/user-attachments/assets/32426d9b-155a-4ce9-836a-b92c1689e424" />
+
+<img width="1535" height="746" alt="patient-management-thumbnail" src="https://github.com/user-attachments/assets/9a54f823-c909-48a5-ae7f-5cc99ac29220" />
 
 ## Repository layout
 
